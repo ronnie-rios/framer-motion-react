@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
     <motion.div
-      animate={{ marginTop: 200, rotateZ: 360 }}
+      initial={{ x: '100vw'}}
+      transition={{ type:'spring', delay: 1.5}}
+      animate={{ x: 0}}
     >
       <motion.h2 animate={{ x: 100}}> what is react?</motion.h2>
       <p>

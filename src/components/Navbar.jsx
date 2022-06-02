@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <div>Navbar
       <Link to='/'>take me home! </Link>
+      <Link to='/about'>what's react?</Link>
       <Link to='/components'>Components</Link>
       <Link to='/hooks'>hooks</Link>
       <Link to='/state'>state</Link>
