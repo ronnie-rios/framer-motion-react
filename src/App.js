@@ -10,15 +10,14 @@ import State from './components/State';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
       <Router>
+      <Navbar />
         <Routes>
-        <Route path='/' element={<About />} />
-        <Route path='/components' element={<Components />} />
-        <Route path='/hooks' element={<Hooks />} />
-        <Route path='/state' element={<State />} />
-        <Route path='/props' element={<Props />} />
+          <Route path='/' element={<About />} />
+          <Route path='/components' element={<Components />} />
+          <Route path='/hooks' element={<Hooks />} />
+          <Route path='/state' element={<State />} />
+          <Route path='/props' element={<Props />} />
         </Routes>
       </Router>
     </div>
