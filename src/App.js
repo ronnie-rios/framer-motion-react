@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' 
 import Navbar from './components/Navbar';
 import Main from './components/Main';
@@ -10,7 +9,7 @@ import State from './components/State';
 
 function App() {
   return (
-    <div className="App">
+    <div classname='bg-black m-h-screen'>
       <Router>
       <Navbar />
         <Routes>
