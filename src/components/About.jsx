@@ -12,21 +12,7 @@ function About() {
     >
       <motion.h2 animate={{ x: 100}}> what is react?</motion.h2>
       <p>
-        * React is fast, handles updates
-        * **modular** - create components that are reusable
-        * **scalable** - good for large programs that display lot of changing data
-        * **flexible**
-        * react allows use to create re-usable and reactive components 
-        * uses a declarative approach
-          * define the desired target states and let react figure out the actual javasript DOM instructions
-          * clear instructions for react to render
 
-        ### What does it use?
-        * uses the virtual DOM
-          * a blueprint of the DOM
-          * when Reach changes elements or updates, it renders it in the VDOM
-          * only re-renders the **element that is changed**
-          * makes it faster
           <Link to='/components'>
             <motion.button
               animate={{ scale: 1.5 }}
