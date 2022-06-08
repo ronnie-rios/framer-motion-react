@@ -13,9 +13,11 @@ function Navbar() {
   )
 }
 
-function NavBarIcon ({icon, text='hello'}) {
+function NavBarIcon ({icon, text='helpful tips'}) {
   <div className='sidebar-icon group'>
     {icon}
+
+    <span className='sidebar-tooltip group-hover:scale-100'>{text}</span>
   </div>
 }
 
