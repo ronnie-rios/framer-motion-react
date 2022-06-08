@@ -4,24 +4,27 @@ import { FaCheckCircle, FaChessKnight, FaCompass,FaHatCowboy } from 'react-icons
 
 function Navbar() {
   return (
-    <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray text-white shadow-md'>
+    <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray shadow-md'>
       <NavBarIcon icon={<FaCheckCircle size='28' />} />
+      <Divider />
       <NavBarIcon icon={<FaCompass size='28' />} />
+      <Divider />
       <NavBarIcon icon={<FaChessKnight size='28' />} />
+      <Divider />
       <NavBarIcon icon={<FaHatCowboy size='28' />} />
     </div>
   )
 }
 
 function NavBarIcon ({icon, text='helpful tips'}) {
-  <div className='sidebar-icon group'>
+  <div className='navbar-icon group'>
     {icon}
 
-    <span className='sidebar-tooltip group-hover:scale-100'>{text}</span>
+    <span className='navbar-tooltip group-hover:scale-100'>{text}</span>
   </div>
 }
 
 function Divider(){
-  <hr className='sidebar-hr' />
+  <hr className='navbar-hr' />
 }
 export default Navbar
